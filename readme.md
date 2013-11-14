@@ -1,10 +1,10 @@
-Your Project Name
+SHED
 =================
-A brief summary of your project
+A masterclass of fannying about with a website in much the same way we do for
+the printed versions of Shed.
 
 ### Setup / Installation
-Some instructions on how to set up and/or install this project
+This is built with roots.cx
 
 ### Staging/Production
-This site is staged at http://example.com [u: admin p: example]    
-This site is live at http://example.com
+This site is live at http://shed.io
