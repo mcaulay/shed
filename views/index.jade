@@ -1,14 +1,17 @@
-!= title_with_markup()
-
-:markdown
-  **Whoo!** You got everything working. Now get to making cool things : )
-
-p this file can be found in views/index.jade
-
-include _partial
-
-:markdown
-  For help and documentation, check out [http://roots.cx](http://roots.cx)
-
-:coffeescript
-  console.log 'you can even use coffeescript in your views, aw yeah'
+include _identity
+.roof
+  h1= title
+.walls
+  :markdown
+    Shed is a side project about your side projects.
+    You can find issues/versions/explosions/volumes of them around Aberdeen but
+    your best bet would be to try [offset57](http://www.offset57.co.uk/ "Offset57").
+    It is haphazardly, unpredidictabily and mostly lethargically made by Stewart
+    Ainslie and Mark McAulay. Two battle hardened memebers of the Aberdeen
+    creative industry who really should know better but hey, what are you going
+    to do eh?
+    If you _really_ want one and cant find one anywhere or if you want us to
+    interview you for a future Shed,
+    [go right ahead and ask us on twitter](https://twitter.com/shedpeople).
+.floor
+  | › steal whatever you think you can get away with but fair warning, we will give you unending abuse if we find out.
