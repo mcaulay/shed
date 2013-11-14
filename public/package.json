@@ -1,6 +1,6 @@
 {
-  "name": "roots-app",
-  "version": "0.0.2",
+  "name": "shed",
+  "version": "0.0.3",
   "dependencies": {
     "connect": "2.6.x"
   },
