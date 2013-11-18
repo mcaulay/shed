@@ -4,22 +4,26 @@ normalize()
 base()
 
 body
-  padding: 50px
   background-image: url("/img/noise.png")
-
-.roof
-  margin-left: 30px
-  margin-bottom: 30px
-  h1
-    text-transform: uppercase
 
 .walls
   font-size: 125%
   line-height: 140%
-
-.floor
-  font-size: 70%
-  margin: 40px 0 0 30px
+  margin: 50px auto
+  width: 90%
+  @media screen and (min-width: 720px)
+    max-width: 1024px
+  img
+    display: block
+    margin: 50px auto
+  p
+    //border:1px solid red
+    margin-top: 0
+    margin-bottom: .5em
+    text-indent: 2em
+    &:first-child
+      text-indent: 0
+      color: red
 
 a
   color: black
