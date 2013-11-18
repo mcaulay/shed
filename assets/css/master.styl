@@ -5,6 +5,7 @@ base()
 
 body
   background-image: url("/img/noise.png")
+  //background: rgb(253, 231, 0)
 
 .walls
   font-size: 125%
@@ -21,9 +22,22 @@ body
     margin-top: 0
     margin-bottom: .5em
     text-indent: 2em
+    color: rgb(13, 154, 72)
     &:first-child
       text-indent: 0
-      color: red
+      color: rgb(237, 28, 36)
+
+  h1
+    color: rgb(237, 28, 36)
+    display: block
+    fs: 125%
+
 
 a
-  color: black
+  color: rgb(253, 231, 0)
+  background: rgb(13, 154, 72)
+  padding: 0 2px
+  text-decoration: none
+  &:hover
+    background: rgb(237, 28, 36)
+
