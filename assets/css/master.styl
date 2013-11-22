@@ -4,9 +4,7 @@ normalize()
 base()
 
 body
-  background-image: url("/img/noise.png")
-  //background: rgb(253, 231, 0)
-
+  background: rgb(253, 231, 0) url("/img/noise.png")
 .walls
   font-size: 125%
   line-height: 140%
@@ -14,11 +12,11 @@ body
   width: 90%
   @media screen and (min-width: 720px)
     max-width: 1024px
-  img
+  h1
+    color: rgb(237, 28, 36)
     display: block
-    margin: 50px auto
+    fs: 125%
   p
-    //border:1px solid red
     margin-top: 0
     margin-bottom: .5em
     text-indent: 2em
@@ -26,18 +24,14 @@ body
     &:first-child
       text-indent: 0
       color: rgb(237, 28, 36)
-
-  h1
-    color: rgb(237, 28, 36)
+  a
+    color: rgb(253, 231, 0)
+    background: rgb(13, 154, 72)
+    padding: 0 2px
+    text-decoration: none
+    &:hover
+      background: rgb(237, 28, 36)
+  img
     display: block
-    fs: 125%
-
-
-a
-  color: rgb(253, 231, 0)
-  background: rgb(13, 154, 72)
-  padding: 0 2px
-  text-decoration: none
-  &:hover
-    background: rgb(237, 28, 36)
+    margin: 50px auto
 
