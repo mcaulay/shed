@@ -5,11 +5,22 @@ base()
 
 body
   background: rgb(253, 231, 0) url("/img/noise.png")
+.whizpop
+  margin: 0 auto
+  width: 640px
+canvas
+  display: block
+  outline: 0px;
+  margin-bottom: 1.5em;
+  position: fixed
+  z-index: -10
+
 .walls
   font-size: 125%
   line-height: 140%
   margin: 50px auto
   width: 90%
+  z-index: 10
   @media screen and (min-width: 720px)
     max-width: 1024px
   h1
