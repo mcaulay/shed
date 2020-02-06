@@ -26,7 +26,7 @@ publishdir = "docs"
 [languages]
   [languages.en]
     title = "SHED"
-    subtitle = "A simple theme for Hugo"
+    subtitle = "is something else now"
     keywords = ""
     copyright = ""
     readOtherPosts = "Read other posts"
