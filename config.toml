@@ -2,6 +2,7 @@ baseURL = "http://shed.io/"
 languageCode = "en-GB"
 title = "SHED | something else now"
 theme = "hello-friend-ng"
+publishdir = "docs"
 
 [params]
   dateform        = "2 Jan 2006"
