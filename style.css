@@ -7,7 +7,7 @@
   --accent:    #3B5A4E;
   --muted:     #6B6A66;
   --surface:   #EDEAE5;
-  --col:       680px;
+  --col:       760px;
   --nav-h:     64px;
 }
 
@@ -100,7 +100,7 @@ nav {
   line-height: 1.08;
   letter-spacing: -0.01em;
   margin-bottom: 2.5rem;
-  max-width: 580px;
+  max-width: 680px;
 }
 
 .hero-headline em {
