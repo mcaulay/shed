@@ -141,7 +141,7 @@ nav {
 }
 
 .pillar:last-child {
-  border-bottom: 1px solid var(--surface);
+  border-bottom: none;
 }
 
 .pillar-title {
