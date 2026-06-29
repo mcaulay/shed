@@ -134,6 +134,9 @@ nav {
 .pillars {
   display: grid;
   gap: 0;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pillar {
@@ -161,6 +164,9 @@ nav {
 /* ─── Closing statement + CTA ─── */
 .closing-block {
   margin-top: 1rem;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .closing-statement {
@@ -203,6 +209,8 @@ nav {
   line-height: 1.6;
   color: #3A3A38;
   max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-body p + p {
@@ -212,6 +220,9 @@ nav {
 /* ─── Journal list ─── */
 .journal-list {
   list-style: none;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .journal-item {
@@ -242,6 +253,12 @@ nav {
 }
 
 /* ─── Contact form ─── */
+form {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .form-field {
   margin-bottom: 1.75rem;
 }
@@ -335,7 +352,8 @@ footer {
   padding: 2.5rem 0;
   border-top: 1px solid var(--surface);
   border-bottom: 1px solid var(--surface);
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
+  max-width: 620px;
 }
 
 .stat-number {
@@ -359,7 +377,8 @@ footer {
   font-weight: 400;
   line-height: 1.35;
   color: #3A3A38;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
+  max-width: 620px;
 }
 
 /* ─── Mobile nav ─── */
