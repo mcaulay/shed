@@ -178,6 +178,7 @@ nav {
   font-family: 'Playfair Display', serif;
   font-size: 1.25rem;
   font-weight: 500;
+  font-style: italic;
   color: var(--accent);
   border-bottom: 1px solid var(--accent);
   padding-bottom: 2px;
@@ -217,7 +218,7 @@ nav {
 }
 
 .journal-item:last-child {
-  border-bottom: 1px solid var(--surface);
+  border-bottom: none;
 }
 
 .journal-item-title {
