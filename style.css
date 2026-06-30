@@ -354,10 +354,15 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo svg {
+  height: 16px;
+  width: auto;
+  display: block;
 }
 
 .footer-copy {
