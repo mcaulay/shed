@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Hanken+Grotesk:wght@300;400;500&display=swap');
 
 /* ─── Tokens ─── */
 :root {
@@ -17,7 +17,7 @@ html { font-size: 16px; scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 300;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
@@ -299,7 +299,7 @@ form {
   border: none;
   border-bottom: 1px solid var(--surface);
   padding: 0.625rem 0;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: var(--ink);
@@ -323,7 +323,7 @@ form {
   display: inline-block;
   background: var(--ink);
   color: var(--bg);
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   letter-spacing: 0.08em;
