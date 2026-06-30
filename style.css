@@ -40,11 +40,15 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.125rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
   color: var(--ink);
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo svg {
+  height: 20px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
