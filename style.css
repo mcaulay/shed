@@ -320,7 +320,7 @@ form {
 
 .form-field label {
   display: block;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
@@ -443,6 +443,58 @@ footer {
   letter-spacing: 0.08em;
   color: var(--bg);
   line-height: 1.4;
+}
+
+/* ─── About body layout ─── */
+.about-intro {
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #3A3A38;
+}
+
+.about-intro p + p { margin-top: 1.25rem; }
+
+.about-creds {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.about-cred {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--surface);
+  align-items: baseline;
+}
+
+.about-cred:last-child {
+  border-bottom: 1px solid var(--surface);
+}
+
+.about-cred-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding-top: 0;
+}
+
+.about-cred p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #3A3A38;
+}
+
+.about-synthesis {
+  max-width: 620px;
+  margin: 2rem auto 0;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #3A3A38;
 }
 
 /* ─── Work page intro ─── */
