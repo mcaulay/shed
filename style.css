@@ -44,10 +44,10 @@ nav {
   color: var(--ink);
   display: flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.nav-logo:hover { transform: scale(1.05); }
+.nav-logo:hover { transform: scale(1.05); color: var(--accent); }
 
 .nav-logo svg {
   height: 20px;
@@ -207,10 +207,10 @@ nav {
   background: var(--ink);
   padding: 0.75rem 1.5rem;
   clip-path: polygon(8px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8px, 8px 8px);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.cta-line:hover { transform: translateY(-2px); }
+.cta-line:hover { transform: translateY(-2px); background: var(--accent); }
 
 /* ─── Section headings ─── */
 .section-heading {
@@ -367,10 +367,10 @@ form {
   border: none;
   cursor: pointer;
   clip-path: polygon(8px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8px, 8px 8px);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.form-submit:hover { transform: translateY(-2px); }
+.form-submit:hover { transform: translateY(-2px); background: var(--accent); }
 
 /* ─── Footer ─── */
 footer {
@@ -390,10 +390,10 @@ footer {
   color: var(--ink);
   display: flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.footer-logo:hover { transform: scale(1.05); }
+.footer-logo:hover { transform: scale(1.05); color: var(--accent); }
 
 .footer-logo svg {
   height: 16px;
@@ -415,7 +415,7 @@ footer {
 }
 
 .stat-row > div {
-  background: var(--ink);
+  background: var(--accent);
   color: var(--bg);
   padding: 1.75rem;
   clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 10px, 10px 10px);
