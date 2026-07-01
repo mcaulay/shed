@@ -20,7 +20,7 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
-  line-height: 1.55;
+  line-height: 1.25;
   -webkit-font-smoothing: antialiased;
 }
 img { display: block; max-width: 100%; }
