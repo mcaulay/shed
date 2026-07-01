@@ -188,26 +188,26 @@ nav {
   line-height: 1.4;
   color: var(--ink);
   max-width: 540px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.closing-block .cta-line {
-  font-size: 1.4rem;
-}
 
-/* ─── CTA line ─── */
+/* ─── CTA button ─── */
 .cta-line {
   display: inline-block;
-  font-family: 'Playfair Display', serif;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--accent);
-  border-bottom: 1px solid var(--accent);
-  padding-bottom: 2px;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--bg);
+  background: var(--ink);
+  padding: 0.75rem 1.5rem;
+  clip-path: polygon(8px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8px, 8px 8px);
   transition: opacity 0.2s;
 }
 
-.cta-line:hover { opacity: 0.7; }
+.cta-line:hover { opacity: 0.75; }
 
 /* ─── Section headings ─── */
 .section-heading {
@@ -356,18 +356,19 @@ form {
   background: var(--ink);
   color: var(--bg);
   font-family: 'Hanken Grotesk', sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 400;
+  font-size: 0.75rem;
+  font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.875rem 2.25rem;
+  padding: 0.75rem 1.5rem;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
+  clip-path: polygon(8px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8px, 8px 8px);
+  transition: opacity 0.2s;
 }
 
 .form-submit:hover {
-  background: var(--accent);
+  opacity: 0.75;
 }
 
 /* ─── Footer ─── */
