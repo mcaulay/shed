@@ -406,6 +406,7 @@ form {
 
 .form-submit {
   display: inline-block;
+  position: relative;
   background: var(--bg);
   color: var(--ink);
   font-family: 'Hanken Grotesk', sans-serif;
