@@ -418,10 +418,10 @@ form {
   border: none;
   cursor: pointer;
   clip-path: polygon(8px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8px, 8px 8px);
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition: top 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.form-submit:hover { transform: translateY(-2px); background: var(--ink); color: var(--bg); }
+.form-submit:hover { top: -2px; background: var(--ink); color: var(--bg); }
 
 /* ─── Footer ─── */
 footer {
