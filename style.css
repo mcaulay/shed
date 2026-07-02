@@ -147,6 +147,7 @@ nav {
 /* ─── Four pillars ─── */
 .pillars {
   display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 0;
   max-width: 620px;
   margin-left: auto;
@@ -154,25 +155,68 @@ nav {
 }
 
 .pillar {
-  padding: 2rem 0;
-  border-top: 1px solid var(--surface);
+  padding: 1.75rem 1.75rem 1.75rem 0;
+  border-top: 2px solid var(--ink);
 }
 
-.pillar:last-child {
-  border-bottom: none;
+.pillar:nth-child(2) {
+  padding-left: 1.75rem;
+  border-left: 1px solid var(--surface);
+}
+
+.pillar:nth-child(3),
+.pillar:nth-child(4) {
+  border-top: 1px solid var(--surface);
+  padding-top: 1.5rem;
+}
+
+.pillar:nth-child(4) {
+  padding-left: 1.75rem;
+  border-left: 1px solid var(--surface);
+}
+
+.pillar-step {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
 }
 
 .pillar-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 500;
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
 }
 
 .pillar-body {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #5A5A56;
   line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+  .pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .pillar {
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--surface);
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+
+  .pillar:first-child {
+    border-top: 2px solid var(--ink);
+  }
+
+  .pillar:last-child {
+    border-bottom: 1px solid var(--surface);
+  }
 }
 
 /* ─── Closing statement + CTA ─── */
