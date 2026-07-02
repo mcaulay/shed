@@ -489,6 +489,18 @@ footer {
   line-height: 1.4;
 }
 
+/* ─── Work pillar summary ─── */
+.work-pillar-summary {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 1.75rem;
+  clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 10px, 10px 10px);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+}
+
 /* ─── About body layout ─── */
 .about-intro {
   max-width: 620px;
