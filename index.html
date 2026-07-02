@@ -40,6 +40,7 @@
     <div class="col">
 
       <section class="hero">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
         <h1 class="hero-headline">
           Growth exposes every <em>weakness</em> in a brand.
         </h1>
@@ -90,6 +91,82 @@
       </div>
     </div>
   </footer>
+
+  <script>
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    const hero = canvas.parentElement;
+
+    function resize() {
+      canvas.width = hero.offsetWidth;
+      canvas.height = hero.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    // Layered sine noise — gives organic, non-repeating flow directions
+    function noise(x, y, t) {
+      const s = 0.0018;
+      return (
+        Math.sin(x * s + t * 0.25) * Math.cos(y * s * 1.3 + t * 0.18) +
+        Math.sin(x * s * 2.2 - y * s * 1.6 + t * 0.4) * 0.55 +
+        Math.cos(x * s * 0.7 + y * s * 2.4 - t * 0.3) * 0.35
+      ) / 1.9;
+    }
+
+    const COUNT = 180;
+    const SPEED = 0.5;
+
+    function makeParticle() {
+      return {
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        age: Math.random() * 200,
+        life: 180 + Math.random() * 180,
+      };
+    }
+
+    let particles = Array.from({ length: COUNT }, makeParticle);
+    let t = 0;
+
+    function frame() {
+      // Very slow fade of canvas — older lines dissolve gently
+      ctx.fillStyle = 'rgba(248, 247, 244, 0.018)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.strokeStyle = 'rgba(20, 20, 18, 0.07)';
+      ctx.lineWidth = 0.7;
+      ctx.lineCap = 'round';
+
+      particles.forEach(p => {
+        const angle = noise(p.x, p.y, t) * Math.PI * 2.5;
+        const nx = p.x + Math.cos(angle) * SPEED;
+        const ny = p.y + Math.sin(angle) * SPEED;
+
+        ctx.beginPath();
+        ctx.moveTo(p.x, p.y);
+        ctx.lineTo(nx, ny);
+        ctx.stroke();
+
+        p.x = nx;
+        p.y = ny;
+        p.age++;
+
+        if (p.age > p.life || p.x < -2 || p.x > canvas.width + 2 || p.y < -2 || p.y > canvas.height + 2) {
+          Object.assign(p, makeParticle());
+        }
+      });
+
+      t += 0.004;
+      requestAnimationFrame(frame);
+    }
+
+    frame();
+  })();
+  </script>
 
 </body>
 </html>
