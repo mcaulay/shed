@@ -352,6 +352,12 @@ form {
   margin-right: auto;
 }
 
+.contact-form {
+  background: var(--accent);
+  clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 10px, 10px 10px);
+  padding: 2.5rem;
+}
+
 .form-field {
   margin-bottom: 1.75rem;
 }
@@ -359,9 +365,10 @@ form {
 .form-field label {
   display: block;
   font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(248, 247, 244, 0.6);
   margin-bottom: 0.5rem;
 }
 
@@ -370,21 +377,26 @@ form {
   width: 100%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--surface);
+  border-bottom: 1px solid rgba(248, 247, 244, 0.25);
   padding: 0.625rem 0;
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  color: var(--ink);
+  color: var(--bg);
   outline: none;
   transition: border-color 0.2s;
   -webkit-appearance: none;
   border-radius: 0;
 }
 
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(248, 247, 244, 0.35);
+}
+
 .form-field input:focus,
 .form-field textarea:focus {
-  border-bottom-color: var(--accent);
+  border-bottom-color: var(--bg);
 }
 
 .form-field textarea {
@@ -394,8 +406,8 @@ form {
 
 .form-submit {
   display: inline-block;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--bg);
+  color: var(--ink);
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
@@ -405,10 +417,10 @@ form {
   border: none;
   cursor: pointer;
   clip-path: polygon(8px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 8px, 8px 8px);
-  transition: transform 0.2s ease, background 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.form-submit:hover { transform: translateY(-2px); background: var(--accent); }
+.form-submit:hover { transform: translateY(-2px); background: var(--ink); color: var(--bg); }
 
 /* ─── Footer ─── */
 footer {
