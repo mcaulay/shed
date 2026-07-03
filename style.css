@@ -584,6 +584,16 @@ footer {
   color: #3A3A38;
 }
 
+.pillar-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.pillar-link:hover { text-decoration: underline; }
+
 /* ─── Work page intro ─── */
 .work-intro {
   font-family: 'Playfair Display', serif;
