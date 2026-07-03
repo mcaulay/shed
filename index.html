@@ -12,6 +12,51 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Shed Ind" />
   <link rel="manifest" href="/favicon/site.webmanifest" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://shed.io/#website",
+        "url": "https://shed.io",
+        "name": "Shed Industries",
+        "description": "Brand strategy consultancy for growing businesses.",
+        "publisher": { "@id": "https://shed.io/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://shed.io/#organization",
+        "name": "Shed Industries",
+        "url": "https://shed.io",
+        "email": "mark@shed.io",
+        "description": "Shed Industries helps growing businesses get clear on their brand, their market, and their path forward through market research, competitor analysis, messaging and brand roadmap.",
+        "knowsAbout": ["brand strategy", "market research", "competitor analysis", "brand messaging", "brand positioning", "brand roadmap"],
+        "founder": { "@type": "Person", "@id": "https://shed.io/#founder", "name": "Mark McAulay" },
+        "areaServed": "GB",
+        "serviceType": "Brand Strategy"
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Shed Industries Brand Strategy",
+        "url": "https://shed.io",
+        "description": "Brand strategy services for growing businesses: market research, competitor analysis, messaging and brand roadmap.",
+        "provider": { "@id": "https://shed.io/#organization" },
+        "areaServed": "GB",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Brand Strategy Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Market Research" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Competitor Analysis" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Messaging" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Roadmap" } }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WN09HDJW0V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
