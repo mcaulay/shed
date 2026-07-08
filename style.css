@@ -7,7 +7,7 @@
   --accent:    #3B5A4E;
   --muted:     #6B6A66;
   --surface:   #EDEAE5;
-  --col:       960px;
+  --col:       1200px;
   --nav-h:     64px;
 }
 
@@ -363,6 +363,12 @@ nav {
   color: rgba(248, 247, 244, 0.6);
 }
 
+@media (min-width: 1300px) {
+  .journal-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media (max-width: 640px) {
   .journal-list {
     grid-template-columns: 1fr;
@@ -593,6 +599,99 @@ footer {
 }
 
 .pillar-link:hover { text-decoration: underline; }
+
+/* ─── Content rail (wide screens) ─── */
+.stat-row {
+  max-width: 620px;
+  margin: 2.5rem auto;
+}
+
+.text-with-rail {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rail {
+  display: none;
+}
+
+@media (min-width: 1300px) {
+  .text-with-rail {
+    grid-template-columns: minmax(0, 620px) 1fr;
+    column-gap: 4rem;
+    align-items: start;
+  }
+
+  .rail {
+    display: block;
+    position: sticky;
+    top: calc(var(--nav-h) + 3rem);
+    max-width: 300px;
+    justify-self: end;
+  }
+}
+
+.rail-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
+}
+
+.rail-list {
+  list-style: none;
+}
+
+.rail-list li {
+  border-top: 1px solid var(--surface);
+}
+
+.rail-list li:last-child {
+  border-bottom: 1px solid var(--surface);
+}
+
+.rail-list a {
+  display: block;
+  padding: 1.125rem 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--ink);
+  transition: color 0.2s;
+}
+
+.rail-list a:hover { color: var(--accent); }
+
+.rail-list .rail-meta {
+  display: block;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-top: 0.375rem;
+}
+
+.rail-list a.current {
+  color: var(--accent);
+  pointer-events: none;
+}
+
+.rail-cta {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+
+.rail-cta:hover { text-decoration: underline; }
 
 /* ─── Work page intro ─── */
 .work-intro {
