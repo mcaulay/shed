@@ -37,7 +37,7 @@ nav {
   justify-content: space-between;
   padding: 0 max(clamp(1.5rem, 5vw, 2rem), calc((100% - var(--col)) / 2));
   background: var(--bg);
-  border-bottom: 1px solid var(--surface);
+  border-bottom: 2px solid var(--ink);
   z-index: 100;
 }
 
@@ -94,7 +94,7 @@ nav {
 }
 
 .section + .section {
-  border-top: 1px solid var(--surface);
+  border-top: 2px solid var(--ink);
 }
 
 .section--closing {
@@ -183,18 +183,18 @@ nav {
 
 .pillar:nth-child(2) {
   padding-left: 1.75rem;
-  border-left: 1px solid var(--surface);
+  border-left: 2px solid var(--ink);
 }
 
 .pillar:nth-child(3),
 .pillar:nth-child(4) {
-  border-top: 1px solid var(--surface);
+  border-top: 2px solid var(--ink);
   padding-top: 1.5rem;
 }
 
 .pillar:nth-child(4) {
   padding-left: 1.75rem;
-  border-left: 1px solid var(--surface);
+  border-left: 2px solid var(--ink);
 }
 
 .pillar-step {
@@ -230,7 +230,7 @@ nav {
 
   .pillar {
     padding: 1.5rem 0;
-    border-top: 1px solid var(--surface);
+    border-top: 2px solid var(--ink);
     border-left: none !important;
     padding-left: 0 !important;
   }
@@ -240,7 +240,7 @@ nav {
   }
 
   .pillar:last-child {
-    border-bottom: 1px solid var(--surface);
+    border-bottom: 2px solid var(--ink);
   }
 }
 
@@ -470,7 +470,7 @@ form {
 
 /* ─── Footer ─── */
 footer {
-  border-top: 1px solid var(--surface);
+  border-top: 2px solid var(--ink);
   padding: 2.5rem 0;
 }
 
@@ -574,12 +574,12 @@ footer {
   grid-template-columns: 80px 1fr;
   gap: 1.5rem;
   padding: 1.75rem 0;
-  border-top: 1px solid var(--surface);
+  border-top: 2px solid var(--ink);
   align-items: baseline;
 }
 
 .about-cred:last-child {
-  border-bottom: 1px solid var(--surface);
+  border-bottom: 2px solid var(--ink);
 }
 
 .about-cred-label {
@@ -660,11 +660,11 @@ footer {
 }
 
 .rail-list li {
-  border-top: 1px solid var(--surface);
+  border-top: 2px solid var(--ink);
 }
 
 .rail-list li:last-child {
-  border-bottom: 1px solid var(--surface);
+  border-bottom: 2px solid var(--ink);
 }
 
 .rail-list a {
@@ -748,7 +748,7 @@ footer {
     background: var(--bg);
     flex-direction: column;
     gap: 0;
-    border-bottom: 1px solid var(--surface);
+    border-bottom: 2px solid var(--ink);
     padding: 0.5rem 0;
   }
 
