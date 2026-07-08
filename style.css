@@ -175,29 +175,20 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
+  border-top: 2px solid var(--ink);
+  border-left: 2px solid var(--ink);
 }
 
 .pillar {
-  padding: 1.75rem 1.75rem 1.75rem 0;
-  border-top: 2px solid var(--ink);
-}
-
-.pillar:nth-child(2) {
-  padding-left: 1.75rem;
-  border-left: 2px solid var(--ink);
-}
-
-.pillar:nth-child(3),
-.pillar:nth-child(4) {
-  border-top: 2px solid var(--ink);
+  display: block;
+  padding: 1.75rem;
+  border-right: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
-  padding-top: 1.5rem;
-  padding-bottom: 1.75rem;
+  transition: background 0.2s ease;
 }
 
-.pillar:nth-child(4) {
-  padding-left: 1.75rem;
-  border-left: 2px solid var(--ink);
+.pillar:hover {
+  background: var(--accent);
 }
 
 .pillar-step {
@@ -207,6 +198,11 @@ nav {
   letter-spacing: 0.08em;
   color: var(--accent);
   margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.pillar:hover .pillar-step {
+  color: var(--accent-2);
 }
 
 .pillar-title {
@@ -215,34 +211,42 @@ nav {
   font-weight: 500;
   margin-bottom: 0.75rem;
   line-height: 1.2;
+  color: var(--ink);
+  transition: color 0.2s ease;
 }
 
-.pillar-title a { transition: color 0.2s; }
-.pillar-title a:hover { color: var(--accent); }
+.pillar:hover .pillar-title {
+  color: var(--bg);
+}
 
 .pillar-body {
   font-size: 1.125rem;
   color: #5A5A56;
   line-height: 1.55;
+  transition: color 0.2s ease;
+}
+
+.pillar:hover .pillar-body {
+  color: rgba(248, 247, 244, 0.85);
+}
+
+.pillar-link {
+  transition: color 0.2s ease;
+}
+
+.pillar:hover .pillar-link {
+  color: var(--accent-2);
 }
 
 @media (max-width: 640px) {
   .pillars {
     grid-template-columns: 1fr;
+    border-left: 2px solid var(--ink);
   }
 
   .pillar {
-    padding: 1.5rem 0;
-    border-top: 2px solid var(--ink);
-    border-left: none !important;
-    padding-left: 0 !important;
-  }
-
-  .pillar:first-child {
-    border-top: 2px solid var(--ink);
-  }
-
-  .pillar:last-child {
+    padding: 1.5rem;
+    border-right: 2px solid var(--ink);
     border-bottom: 2px solid var(--ink);
   }
 }
