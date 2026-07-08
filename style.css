@@ -716,6 +716,14 @@ footer {
 
 .rail-cta:hover { text-decoration: underline; }
 
+button.rail-cta {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: 'Hanken Grotesk', sans-serif;
+  cursor: pointer;
+}
+
 /* ─── Work page intro ─── */
 .work-intro {
   font-family: 'Playfair Display', serif;
@@ -853,4 +861,86 @@ footer {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* ─── Footer legal link ─── */
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-legal-link {
+  font-size: 1rem;
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.footer-legal-link:hover {
+  color: var(--ink);
+}
+
+/* ─── Legal page ─── */
+.legal-content {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: #3A3A38;
+}
+
+.legal-content p {
+  margin-bottom: 1.25rem;
+}
+
+.legal-content a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.legal-updated {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.legal-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 2.75rem 0 1.25rem;
+  padding-top: 1.75rem;
+  border-top: 2px solid var(--ink);
+}
+
+.legal-content h2:first-of-type {
+  margin-top: 2.75rem;
+}
+
+.legal-content h3 {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 1.75rem 0 0.75rem;
+}
+
+.legal-list {
+  margin: 0 0 1.25rem 1.25rem;
+}
+
+.legal-list li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-content code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9em;
+  background: var(--surface);
+  padding: 0.125rem 0.375rem;
+  border-radius: 3px;
 }
