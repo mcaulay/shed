@@ -217,6 +217,9 @@ nav {
   line-height: 1.2;
 }
 
+.pillar-title a { transition: color 0.2s; }
+.pillar-title a:hover { color: var(--accent); }
+
 .pillar-body {
   font-size: 1.125rem;
   color: #5A5A56;
