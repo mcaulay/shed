@@ -376,6 +376,20 @@ nav {
   }
 }
 
+/* ─── Contact page columns ─── */
+.contact-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1300px) {
+  .contact-columns {
+    grid-template-columns: minmax(0, 620px) 1fr;
+    align-items: start;
+  }
+}
+
 /* ─── Contact form ─── */
 form {
   max-width: 620px;
