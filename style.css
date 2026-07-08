@@ -189,7 +189,9 @@ nav {
 .pillar:nth-child(3),
 .pillar:nth-child(4) {
   border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
   padding-top: 1.5rem;
+  padding-bottom: 1.75rem;
 }
 
 .pillar:nth-child(4) {
