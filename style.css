@@ -4,7 +4,8 @@
 :root {
   --bg:        #F8F7F4;
   --ink:       #141412;
-  --accent:    #3B5A4E;
+  --accent:    #E8541C;
+  --accent-2:  #2B2ACB;
   --muted:     #6B6A66;
   --surface:   #EDEAE5;
   --col:       1200px;
@@ -278,7 +279,7 @@ nav {
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.cta-line:hover { transform: translateY(-2px); background: var(--accent); }
+.cta-line:hover { transform: translateY(-2px); background: var(--accent-2); }
 
 /* ─── Section headings ─── */
 .section-heading {
