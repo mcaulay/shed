@@ -99,7 +99,7 @@ nav {
 
 .section--closing {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .section:has(+ .section--closing) {
@@ -257,12 +257,12 @@ nav {
 
 .closing-statement {
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   font-weight: 400;
   font-style: italic;
-  line-height: 1.4;
+  line-height: 1.35;
   color: var(--ink);
-  max-width: 540px;
+  max-width: 600px;
   margin-bottom: 2rem;
 }
 
