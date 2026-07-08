@@ -452,7 +452,7 @@ form {
   transition: top 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.form-submit:hover { top: -2px; background: var(--ink); color: var(--bg); }
+.form-submit:hover { top: -2px; background: var(--accent-2); color: var(--bg); }
 
 /* ─── Footer ─── */
 footer {
