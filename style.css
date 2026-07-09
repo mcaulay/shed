@@ -72,7 +72,10 @@ nav {
   transition: color 0.2s;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  color: var(--accent-2);
+}
+
 .nav-links a.active {
   color: var(--ink);
 }
@@ -169,6 +172,14 @@ nav {
   max-width: 620px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.eyebrow a {
+  transition: color 0.2s ease;
+}
+
+.eyebrow a:hover {
+  color: var(--accent-2) !important;
 }
 
 /* ─── Four pillars ─── */
@@ -613,6 +624,14 @@ footer {
   color: #3A3A38;
 }
 
+.about-synthesis a {
+  transition: color 0.2s ease;
+}
+
+.about-synthesis a:hover {
+  color: var(--accent-2) !important;
+}
+
 .pillar-link {
   display: inline-block;
   margin-top: 0.75rem;
@@ -686,7 +705,7 @@ footer {
   transition: color 0.2s;
 }
 
-.rail-list a:hover { color: var(--accent); }
+.rail-list a:hover { color: var(--accent-2); }
 
 .rail-list .rail-meta {
   display: block;
@@ -714,7 +733,7 @@ footer {
   color: var(--accent);
 }
 
-.rail-cta:hover { text-decoration: underline; }
+.rail-cta:hover { color: var(--accent-2); text-decoration: underline; }
 
 button.rail-cta {
   background: none;
@@ -878,7 +897,7 @@ button.rail-cta {
 }
 
 .footer-legal-link:hover {
-  color: var(--ink);
+  color: var(--accent-2);
 }
 
 /* ─── Legal page ─── */
@@ -897,6 +916,11 @@ button.rail-cta {
 .legal-content a {
   color: var(--accent);
   text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.legal-content a:hover {
+  color: var(--accent-2);
 }
 
 .legal-updated {
