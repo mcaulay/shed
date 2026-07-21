@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "shed-industries",
+      "name": "shed-industries-site",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["serve.py", "3456"],
-      "port": 3456
+      "runtimeArgs": ["serve.py"],
+      "autoPort": true
     }
   ]
 }

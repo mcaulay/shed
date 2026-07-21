@@ -54,61 +54,58 @@
 
   <main class="page">
 
-    <section class="hero" style="background-image: url('/images/headers/contact-future.jpg'); background-size: cover; background-position: center;">
-      <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <div style="max-width: 900px; background: rgba(248,247,244,0.6); padding: clamp(1.5rem, 4vw, 2.5rem); backdrop-filter: blur(2px);">
-        <p class="eyebrow">Contact</p>
-        <h1 class="hero-headline" style="margin-bottom: 0;">
-          The right time to think about brand strategy is before the market forces the issue.
-        </h1>
-        <div class="hero-body" style="margin-top: 1.5rem;">
-          <p>If that moment feels close, get in touch. Tell us about your business, where it's headed, and what's prompted you to reach out.</p>
+    <div class="v2-col">
+
+      <section class="v2-hero">
+        <p class="v2-eyebrow">Contact</p>
+        <h1 class="v2-headline">The right time to think about brand strategy is before the market forces the issue.</h1>
+        <p class="v2-statement" style="margin-top: 27px; font-size: clamp(18px, 2vw, 27px);">If that moment feels close, get in touch. Tell us about your business, where it's headed, and what's prompted you to reach out.</p>
+      </section>
+
+    </div>
+
+    <section class="v2-stats">
+      <div class="v2-col v2-grid-2">
+        <div>
+          <form action="https://formspree.io/f/xnjkzkwd" method="post">
+
+            <div class="v2-form-field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="v2-form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="v2-form-field">
+              <label for="business">Business name</label>
+              <input type="text" id="business" name="business">
+            </div>
+
+            <div class="v2-form-field">
+              <label for="message">Tell us about your business, where it's headed, and what's prompted you to get in touch</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="v2-form-submit">Send message</button>
+
+          </form>
+        </div>
+
+        <div>
+          <p class="v2-eyebrow">When to get in touch</p>
+          <p class="v2-body-text" style="margin-top: 27px;">There's a pattern to how brand strategy gets commissioned. Something shifts in the market, growth stalls, or a competitor makes a move that's hard to ignore. The brief arrives under pressure.</p>
+          <p class="v2-body-text" style="margin-top: 18px;">The alternative is to get ahead of it — to treat brand strategy as preparation for the market a business is moving into, rather than a response to the one it's already in.</p>
+          <p class="v2-body-text" style="margin-top: 18px;">The work has value either way. But the conditions in which it happens change what's possible.</p>
         </div>
       </div>
     </section>
 
-    <div class="col">
+    <div class="v2-col">
 
-      <section class="section" style="padding-top: 3rem; border-top: none;">
-        <div class="contact-columns">
-          <div>
-            <form action="https://formspree.io/f/xnjkzkwd" method="post" class="contact-form">
-
-              <div class="form-field">
-                <label for="name">Your name</label>
-                <input type="text" id="name" name="name" autocomplete="name" required>
-              </div>
-
-              <div class="form-field">
-                <label for="email">Email address</label>
-                <input type="email" id="email" name="email" autocomplete="email" required>
-              </div>
-
-              <div class="form-field">
-                <label for="business">Business name</label>
-                <input type="text" id="business" name="business">
-              </div>
-
-              <div class="form-field">
-                <label for="message">Tell us about your business, where it's headed, and what's prompted you to get in touch</label>
-                <textarea id="message" name="message" required></textarea>
-              </div>
-
-              <button type="submit" class="form-submit">Send message</button>
-
-            </form>
-          </div>
-
-          <div>
-            <p class="eyebrow">When to get in touch</p>
-            <div class="section-body">
-              <p>There's a pattern to how brand strategy gets commissioned. Something shifts in the market, growth stalls, or a competitor makes a move that's hard to ignore. The brief arrives under pressure.</p>
-              <p>The alternative is to get ahead of it — to treat brand strategy as preparation for the market a business is moving into, rather than a response to the one it's already in.</p>
-              <p>The work has value either way. But the conditions in which it happens change what's possible.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <img class="v2-image" src="/images/headers/contact-future.jpg" alt="" style="margin-bottom: 45px;">
 
     </div>
   </main>
@@ -124,45 +121,6 @@
       </div>
     </div>
   </footer>
-
-  <script>
-  (function () {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const canvas = document.getElementById('hero-canvas');
-    const ctx = canvas.getContext('2d');
-    const hero = canvas.parentElement;
-    function resize() { canvas.width = hero.offsetWidth; canvas.height = hero.offsetHeight; }
-    resize();
-    window.addEventListener('resize', resize);
-    function noise(x, y, t) {
-      const s = 0.0018;
-      return (Math.sin(x*s+t*0.25)*Math.cos(y*s*1.3+t*0.18)+Math.sin(x*s*2.2-y*s*1.6+t*0.4)*0.55+Math.cos(x*s*0.7+y*s*2.4-t*0.3)*0.35)/1.9;
-    }
-    const STEP = 32, AMP = 14, DOT_R = 1.5;
-    let t = 0;
-    function warp(x, y) {
-      const n = noise(x, y, t);
-      return [x + n * AMP, y + n * AMP * 0.6];
-    }
-    function frame() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'rgba(20,20,18,0.32)';
-      const cols = Math.ceil(canvas.width / STEP);
-      const rows = Math.ceil(canvas.height / STEP);
-      for (let j = 0; j <= rows; j++) {
-        for (let i = 0; i <= cols; i++) {
-          const [wx, wy] = warp(i * STEP, j * STEP);
-          ctx.beginPath();
-          ctx.arc(wx, wy, DOT_R, 0, Math.PI * 2);
-          ctx.fill();
-        }
-      }
-      t += 0.0056; requestAnimationFrame(frame);
-    }
-    frame();
-  })();
-  </script>
-
 
   <div id="cookie-banner" class="cookie-banner">
     <p>We use cookies to understand how visitors use this site. No tracking happens until you accept. <a href="/legal/#cookie-policy">Learn more</a></p>

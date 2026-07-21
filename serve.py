@@ -49,5 +49,5 @@ class NoCacheHandler(http.server.BaseHTTPRequestHandler):
     def log_message(self, format, *args):
         print(f"{args[0]} {args[1]}")
 
-port = int(sys.argv[1]) if len(sys.argv) > 1 else 3456
+port = int(os.environ.get('PORT') or (sys.argv[1] if len(sys.argv) > 1 else 3456))
 http.server.test(HandlerClass=NoCacheHandler, port=port, bind='')
