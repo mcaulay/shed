@@ -54,20 +54,22 @@
 
   <main class="page">
 
-    <section class="hero">
+    <section class="hero" style="background-image: url('/images/headers/contact-future.jpg'); background-size: cover; background-position: center;">
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
-      <p class="eyebrow">Contact</p>
-      <h1 class="hero-headline">
-        The right time to think about brand strategy is before the market forces the issue.
-      </h1>
-      <div class="hero-body" style="margin-top: 1.5rem;">
-        <p>If that moment feels close, get in touch. Tell us about your business, where it's headed, and what's prompted you to reach out.</p>
+      <div style="max-width: 900px; background: rgba(248,247,244,0.6); padding: clamp(1.5rem, 4vw, 2.5rem); backdrop-filter: blur(2px);">
+        <p class="eyebrow">Contact</p>
+        <h1 class="hero-headline" style="margin-bottom: 0;">
+          The right time to think about brand strategy is before the market forces the issue.
+        </h1>
+        <div class="hero-body" style="margin-top: 1.5rem;">
+          <p>If that moment feels close, get in touch. Tell us about your business, where it's headed, and what's prompted you to reach out.</p>
+        </div>
       </div>
     </section>
 
     <div class="col">
 
-      <section class="section" style="padding-top: 0; border-top: none;">
+      <section class="section" style="padding-top: 3rem; border-top: none;">
         <div class="contact-columns">
           <div>
             <form action="https://formspree.io/f/xnjkzkwd" method="post" class="contact-form">
@@ -136,19 +138,26 @@
       const s = 0.0018;
       return (Math.sin(x*s+t*0.25)*Math.cos(y*s*1.3+t*0.18)+Math.sin(x*s*2.2-y*s*1.6+t*0.4)*0.55+Math.cos(x*s*0.7+y*s*2.4-t*0.3)*0.35)/1.9;
     }
-    const COUNT = 180, SPEED = 0.5;
-    function makeParticle() { return { x: Math.random()*canvas.width, y: Math.random()*canvas.height, age: Math.random()*200, life: 180+Math.random()*180 }; }
-    let particles = Array.from({ length: COUNT }, makeParticle), t = 0;
+    const STEP = 32, AMP = 14, DOT_R = 1.5;
+    let t = 0;
+    function warp(x, y) {
+      const n = noise(x, y, t);
+      return [x + n * AMP, y + n * AMP * 0.6];
+    }
     function frame() {
-      ctx.fillStyle = 'rgba(248,247,244,0.015)'; ctx.fillRect(0,0,canvas.width,canvas.height);
-      ctx.strokeStyle = 'rgba(20,20,18,0.10)'; ctx.lineWidth = 0.7; ctx.lineCap = 'round';
-      particles.forEach(p => {
-        const a = noise(p.x,p.y,t)*Math.PI*2.5, nx = p.x+Math.cos(a)*SPEED, ny = p.y+Math.sin(a)*SPEED;
-        ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(nx,ny); ctx.stroke();
-        p.x=nx; p.y=ny; p.age++;
-        if (p.age>p.life||p.x<-2||p.x>canvas.width+2||p.y<-2||p.y>canvas.height+2) Object.assign(p,makeParticle());
-      });
-      t+=0.004; requestAnimationFrame(frame);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'rgba(20,20,18,0.32)';
+      const cols = Math.ceil(canvas.width / STEP);
+      const rows = Math.ceil(canvas.height / STEP);
+      for (let j = 0; j <= rows; j++) {
+        for (let i = 0; i <= cols; i++) {
+          const [wx, wy] = warp(i * STEP, j * STEP);
+          ctx.beginPath();
+          ctx.arc(wx, wy, DOT_R, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+      t += 0.0056; requestAnimationFrame(frame);
     }
     frame();
   })();
