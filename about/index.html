@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Shed Industries | UK Brand Strategy Consultancy</title>
   <meta name="description" content="Twenty years of agency experience, six years as a founder, and current immersion in competitive markets. This is what Shed Industries brings to every brand strategy engagement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
@@ -44,6 +49,13 @@
         "worksFor": { "@id": "https://shed.io/#organization" },
         "knowsAbout": ["brand strategy", "market research", "competitor analysis", "brand messaging", "brand positioning"],
         "description": "Twenty years working in design agencies building and positioning brands across a wide range of sectors, plus six years as a founder building a brand in the food and drink sector from the ground up."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shed.io/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://shed.io/about/" }
+        ]
       }
     ]
   }
@@ -73,6 +85,7 @@
       <section class="v2-hero">
         <p class="v2-eyebrow">About</p>
         <h1 class="v2-headline">Brand Strategy Is Your Advantage</h1>
+        <a href="/contact/" class="v2-text-link" style="margin-top: 27px;">Let's talk →</a>
       </section>
 
       <section class="v2-statement-section">
@@ -127,7 +140,10 @@
       <section class="v2-closing">
         <p class="v2-closing-line">No AI can replicate 20 years of reading a room.</p>
         <a href="/contact/" class="v2-text-link">Work with us →</a>
-        <img class="v2-image" src="/images/headers/about-feet.jpg" alt="">
+        <picture>
+          <source srcset="/images/headers/about-feet.webp" type="image/webp">
+          <img class="v2-image" src="/images/headers/about-feet.jpg" alt="" width="2560" height="1440" loading="lazy" decoding="async">
+        </picture>
       </section>
 
     </div>

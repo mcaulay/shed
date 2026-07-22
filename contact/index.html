@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Shed Industries | Brand Strategy Consultancy UK</title>
   <meta name="description" content="If your business has grown but your brand hasn't kept pace, it's worth a conversation. Get in touch with Shed Industries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
@@ -32,6 +37,16 @@
     "description": "Get in touch with Shed Industries to discuss brand strategy for your business.",
     "isPartOf": { "@id": "https://shed.io/#website" },
     "mainEntity": { "@id": "https://shed.io/#organization" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shed.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://shed.io/contact/" }
+    ]
   }
   </script>
   <!-- Google Analytics loads only after cookie consent is given; see consent banner script near end of file -->
@@ -105,7 +120,10 @@
 
     <div class="v2-col">
 
-      <img class="v2-image" src="/images/headers/contact-future.jpg" alt="" style="margin-bottom: 45px;">
+      <picture>
+        <source srcset="/images/headers/contact-future.webp" type="image/webp">
+        <img class="v2-image" src="/images/headers/contact-future.jpg" alt="" style="margin-bottom: 45px;" width="2560" height="1440" loading="lazy" decoding="async">
+      </picture>
 
     </div>
   </main>
