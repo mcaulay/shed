@@ -22,6 +22,8 @@ Shed Industries works with businesses on four things that determine whether a br
 Honest thinking on brand positioning, market dynamics, and messaging, published when it's worth reading.
 
 - [Journal index](https://shed.io/journal/): All articles.
+- [Good Is Everywhere Now. Ideas Aren't.](https://shed.io/journal/good-is-everywhere-ideas-arent/): AI has raised the baseline of good work for everyone, fast — but it can't have the idea in the first place, and that's still where businesses stand out.
+- [I Don't Trust AI That Agrees With Me](https://shed.io/journal/i-dont-trust-ai-that-agrees-with-me/): Almost a year building a consultancy with Claude as a working partner, and why an AI that only agrees isn't saving time — it's quietly making judgement worse.
 - [The Blast-Beat Guide to Brand Strategy](https://shed.io/journal/the-blast-beat-guide-to-brand-strategy/): What Napalm Death and Dolly Parton have in common, and what it means for building a brand that lasts.
 - [When to Think About Brand Strategy](https://shed.io/journal/when-to-think-about-brand-strategy/): The right moment for brand strategy is rarely forced.
 - [The Comfortable Danger Zone](https://shed.io/journal/the-comfortable-danger-zone/): What settled success can hide, and how to see vulnerability before it becomes a problem.

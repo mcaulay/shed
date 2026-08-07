@@ -15,7 +15,9 @@ color `#141412`, off-white `#F8F7F4`.
 2. Add its card to `journal/index.html` (`.v2-journal-card`, with a real
    category label in `.v2-journal-meta`, e.g. "Brand Strategy · July 2026").
 3. Add the URL to `sitemap.xml`.
-4. **Create a branded OG share image — don't skip this.** Every article needs
+4. Add it to `llms.txt` under `## Journal`, newest first, with a one-sentence
+   description matching the existing entries' style.
+5. **Create a branded OG share image — don't skip this.** Every article needs
    its own 1200×630 share card, not just the raw header photo. Process:
    - Composite it from the article's own header image: dark scrim gradient,
      the site logo (top-left), an orange uppercase category label, and a bold
