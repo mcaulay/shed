@@ -1205,6 +1205,86 @@ button.rail-cta {
   margin-top: 63px;
 }
 
+/* ─── v2: latest journal preview list (home page) ─── */
+.v2-latest-journal {
+  margin-top: 63px;
+}
+
+.v2-latest-journal-title {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  margin-bottom: 27px;
+}
+
+.v2-latest-journal-list {
+  list-style: none;
+}
+
+.v2-latest-journal-list li {
+  border-top: 1px solid var(--ink);
+}
+
+.v2-latest-journal-list li:last-child {
+  border-bottom: 1px solid var(--ink);
+}
+
+.v2-latest-journal-list a {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding: 27px 0;
+}
+
+.v2-latest-journal-thumb-wrap {
+  display: block;
+  width: 108px;
+  height: 108px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.v2-latest-journal-thumb-wrap picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.v2-latest-journal-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.v2-latest-journal-meta {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  margin-bottom: 9px;
+}
+
+.v2-latest-journal-name {
+  font-family: 'Switzer', sans-serif;
+  font-size: clamp(20px, 2.2vw, 27px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--ink);
+  transition: color 0.2s ease;
+}
+
+.v2-latest-journal-list a:hover .v2-latest-journal-name { color: var(--accent-2); }
+
+.v2-latest-journal-author {
+  font-size: 15px;
+  color: var(--muted);
+  margin-top: 9px;
+}
+
 /* ─── v2: generic full-width two-column grid (reused by
    pillars, work services, contact layout) ─── */
 .v2-grid-2 {

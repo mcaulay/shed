@@ -17,7 +17,14 @@ color `#141412`, off-white `#F8F7F4`.
 3. Add the URL to `sitemap.xml`.
 4. Add it to `llms.txt` under `## Journal`, newest first, with a one-sentence
    description matching the existing entries' style.
-5. **Create a branded OG share image — don't skip this.** Every article needs
+5. **Update the "From the journal" list on the home page** (`index.html`,
+   `.v2-latest-journal-list`, between the "What we'll do for you" link and
+   the closing ship image). It shows the 4 most recent articles, newest
+   first — add the new one at the top and drop the oldest of the 4. Each
+   item needs the thumbnail image (wrapped in `.v2-latest-journal-thumb-wrap`
+   so all thumbs stay a fixed 108×108px regardless of title length), category
+   label, title, and "By [author]".
+6. **Create a branded OG share image — don't skip this.** Every article needs
    its own 1200×630 share card, not just the raw header photo. Process:
    - Composite it from the article's own header image: dark scrim gradient,
      the site logo (top-left), an orange uppercase category label, and a bold
