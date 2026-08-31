@@ -16,35 +16,35 @@
   </url>
 
   <url>
-    <loc>https://shed.io/work/</loc>
+    <loc>https://shed.io/brand-strategy/</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://shed.io/brand-strategy/market-research/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://shed.io/work/market-research/</loc>
+    <loc>https://shed.io/brand-strategy/competitor-analysis/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://shed.io/work/competitor-analysis/</loc>
+    <loc>https://shed.io/brand-strategy/messaging/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://shed.io/work/messaging/</loc>
-    <lastmod>2026-07-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://shed.io/work/brand-roadmap/</loc>
+    <loc>https://shed.io/brand-strategy/brand-roadmap/</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -86,8 +86,8 @@
   </url>
 
   <url>
-    <loc>https://shed.io/journal/when-to-think-about-brand-strategy/</loc>
-    <lastmod>2026-06-01</lastmod>
+    <loc>https://shed.io/journal/brand-is-doing-too-much-work/</loc>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -6,11 +6,11 @@ Shed Industries works with businesses on four things that determine whether a br
 
 ## Services
 
-- [Market Research](https://shed.io/work/market-research/): Evidence-based research into who the customers are, what they value, and how their expectations are shifting.
-- [Competitor Analysis](https://shed.io/work/competitor-analysis/): Mapping how competitors are positioned, where they are vulnerable, and what space is available to own.
-- [Messaging](https://shed.io/work/messaging/): Defining what a business says, how it says it, and to whom — the narrative a brand carries into every market and conversation.
-- [Brand Roadmap](https://shed.io/work/brand-roadmap/): A clear, prioritised plan for what changes, what stays, what gets built, and in what order.
-- [Work overview](https://shed.io/work/): All four services and how they build on each other.
+- [Market Research](https://shed.io/brand-strategy/market-research/): Evidence-based research into who the customers are, what they value, and how their expectations are shifting.
+- [Competitor Analysis](https://shed.io/brand-strategy/competitor-analysis/): Mapping how competitors are positioned, where they are vulnerable, and what space is available to own.
+- [Messaging](https://shed.io/brand-strategy/messaging/): Defining what a business says, how it says it, and to whom — the narrative a brand carries into every market and conversation.
+- [Brand Roadmap](https://shed.io/brand-strategy/brand-roadmap/): A clear, prioritised plan for what changes, what stays, what gets built, and in what order.
+- [Brand Strategy](https://shed.io/brand-strategy/): Plain definitions of what brand strategy is, where it sits in a business, when a business needs it, and how it differs from creative direction, plus an FAQ.
 
 ## Company
 
@@ -22,9 +22,9 @@ Shed Industries works with businesses on four things that determine whether a br
 Honest thinking on brand positioning, market dynamics, and messaging, published when it's worth reading.
 
 - [Journal index](https://shed.io/journal/): All articles.
+- ["Brand" Is Doing Too Much Work](https://shed.io/journal/brand-is-doing-too-much-work/): Why brand strategy keeps getting mistaken for design, marketing and creative direction, with examples of it working, failing, and what five leading agencies do differently.
 - [Good Is Everywhere Now. Ideas Aren't.](https://shed.io/journal/good-is-everywhere-ideas-arent/): AI has raised the baseline of good work for everyone, fast — but it can't have the idea in the first place, and that's still where businesses stand out.
 - [I Don't Trust AI That Agrees With Me](https://shed.io/journal/i-dont-trust-ai-that-agrees-with-me/): Almost a year building a consultancy with Claude as a working partner, and why an AI that only agrees isn't saving time — it's quietly making judgement worse.
 - [The Blast-Beat Guide to Brand Strategy](https://shed.io/journal/the-blast-beat-guide-to-brand-strategy/): What Napalm Death and Dolly Parton have in common, and what it means for building a brand that lasts.
-- [When to Think About Brand Strategy](https://shed.io/journal/when-to-think-about-brand-strategy/): The right moment for brand strategy is rarely forced.
 - [The Comfortable Danger Zone](https://shed.io/journal/the-comfortable-danger-zone/): What settled success can hide, and how to see vulnerability before it becomes a problem.
 - [What a Brand Roadmap Actually Is](https://shed.io/journal/what-a-brand-roadmap-actually-is/): Why a roadmap is a prioritised plan, not a vision statement.

@@ -1443,6 +1443,37 @@ button.v2-rail-cta {
   border-radius: 3px;
 }
 
+/* ─── v2: FAQ (flat, hairline-divided) ─── */
+.v2-faq {
+  max-width: 780px;
+  margin-top: 9px;
+}
+
+.v2-faq-item {
+  padding: 27px 0;
+  border-top: 1px solid var(--ink);
+}
+
+.v2-faq-item:last-child {
+  border-bottom: 1px solid var(--ink);
+}
+
+.v2-faq-question {
+  font-family: 'Switzer', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 9px;
+}
+
+.v2-faq-answer {
+  font-family: 'Switzer', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
 .v2-byline {
   font-size: 18px;
   color: var(--muted);

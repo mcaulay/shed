@@ -41,8 +41,8 @@ color `#141412`, off-white `#F8F7F4`.
      before committing — they're build scratch, not shippable content.
 7. **Review internal linking, both directions.** Read the new article's body
    copy for phrases that naturally match an existing work sub-page
-   (`/work/market-research/`, `/work/competitor-analysis/`,
-   `/work/messaging/`, `/work/brand-roadmap/`) or another article, and link
+   (`/brand-strategy/market-research/`, `/brand-strategy/competitor-analysis/`,
+   `/brand-strategy/messaging/`, `/brand-strategy/brand-roadmap/`) or another article, and link
    them. Then check existing articles for copy that could now link to this
    new one. Prefer linking exact phrasing already on the page over rewording
    a sentence to force a link — only reword when the underlying idea is
@@ -52,7 +52,7 @@ color `#141412`, off-white `#F8F7F4`.
 ## Adding a new work sub-page
 
 Follow the same `.v2-article`-adjacent pattern as the other four pillar pages
-under `/work/`, add it to the rail nav (`.v2-rail-list`) on the other three
+under `/brand-strategy/`, add it to the rail nav (`.v2-rail-list`) on the other three
 pillar pages and to `work/index.html`, and add the URL to `sitemap.xml`.
 Also do the internal linking review described in step 7 above — check its
 copy for links to the other pillars, and check existing journal articles for
