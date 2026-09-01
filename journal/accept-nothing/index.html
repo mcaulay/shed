@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accept Nothing: What a Website Built With AI Actually Proves | Shed Industries Journal</title>
+  <meta name="description" content="A shed.io case study on building a website with AI: what the tool did, what stayed human, and why effort still decides the outcome.">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@300,500,700&display=swap">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Shed Ind" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+  <link rel="canonical" href="https://shed.io/journal/accept-nothing/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Shed Industries" />
+  <meta property="og:title" content="Accept Nothing" />
+  <meta property="og:description" content="A shed.io case study on building a website with AI: what the tool did, what stayed human, and why effort still decides the outcome.">
+  <meta property="og:url" content="https://shed.io/journal/accept-nothing/" />
+  <meta property="og:image" content="https://shed.io/images/og/accept-nothing-og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="article:published_time" content="2026-09-01" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://shed.io/journal/accept-nothing/",
+    "url": "https://shed.io/journal/accept-nothing/",
+    "headline": "Accept Nothing",
+    "description": "A shed.io case study on building a website with AI: what the tool did, what stayed human, and why effort still decides the outcome.",
+    "datePublished": "2026-09-01",
+    "image": "https://shed.io/images/og/accept-nothing-og.jpg",
+    "author": { "@id": "https://shed.io/#founder" },
+    "publisher": { "@id": "https://shed.io/#organization" },
+    "isPartOf": { "@id": "https://shed.io/journal/" },
+    "about": ["AI collaboration", "web development", "brand strategy"],
+    "keywords": "AI collaboration, Claude Code, website build, GitHub Pages, Cloudflare"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://shed.io/" },
+      { "@type": "ListItem", "position": 2, "name": "Journal", "item": "https://shed.io/journal/" },
+      { "@type": "ListItem", "position": 3, "name": "Accept Nothing", "item": "https://shed.io/journal/accept-nothing/" }
+    ]
+  }
+  </script>
+  <!-- Google Analytics loads only after cookie consent is given; see consent banner script near end of file -->
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo" aria-label="Shed Industries"><svg viewBox="0 0 2633 778" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g transform="matrix(1.02829,0,0,0.540123,0,0)"><g transform="matrix(2.9982,0,0,5.70801,-948.445,-1984.9)"><path d="M673.184,505.603L685.334,503.353C685.334,519.778 698.159,543.853 732.359,543.853C753.059,543.853 775.784,533.053 775.784,510.103C775.784,484.228 753.509,479.053 732.359,477.253C707.834,475.228 677.684,467.803 677.684,435.628C677.684,405.028 706.259,392.428 730.334,392.428C754.634,392.428 779.384,405.928 781.634,434.728L769.484,436.978C767.234,414.703 750.584,403.903 730.334,403.903C711.209,403.903 689.609,413.353 689.609,435.628C689.609,449.578 698.159,462.628 732.359,465.778C756.659,468.028 788.159,472.978 788.159,510.103C788.159,538.228 762.509,555.328 732.359,555.328C691.184,555.328 673.184,528.103 673.184,505.603ZM914.384,553.078L902.009,553.078L902.009,477.253L818.759,477.253L818.759,553.078L806.609,553.078L806.609,394.678L818.759,394.678L818.759,465.778L902.009,465.778L902.009,394.678L914.384,394.678L914.384,553.078ZM1035.43,553.078L935.084,553.078L935.084,394.678L1035.43,394.678L1035.43,406.153L947.234,406.153L947.234,465.778L1026.66,465.778L1026.66,477.253L947.234,477.253L947.234,541.603L1035.43,541.603L1035.43,553.078ZM1054.56,553.078L1054.56,394.678L1106.31,394.678C1148.16,394.903 1168.63,426.628 1168.63,473.878C1168.63,521.578 1148.16,553.078 1106.31,553.078L1054.56,553.078ZM1106.31,406.153L1066.71,406.153L1066.71,541.603L1106.31,541.603C1137.13,541.603 1155.36,517.528 1155.36,473.878C1155.36,431.128 1137.13,406.153 1106.31,406.153ZM611.614,600.016L316.338,600.016L316.338,459.785L380.977,347.739L548.232,347.739L611.614,459.812L611.614,600.016ZM599.9,467.21L452.38,467.21L452.38,588.303L599.9,588.303L599.9,467.21ZM332.335,455.496L436.383,455.496L384.359,365.317L332.335,455.496ZM440.667,588.303L440.667,467.21L328.052,467.21L328.052,588.303L440.667,588.303ZM394.499,359.453L449.906,455.496L595.717,455.496L541.4,359.453L394.499,359.453Z"/></g></g></svg></a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/brand-strategy/">Brand Strategy</a></li>
+      <li><a href="/journal/" class="active">Journal</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <div class="col">
+
+      <section class="hero">
+        <p class="eyebrow"><a href="/journal/">Journal</a> &nbsp;·&nbsp; AI Collaboration</p>
+        <h1 class="headline headline--article">Accept Nothing</h1>
+        <p class="byline">September 2026 &nbsp;·&nbsp; By Mark McAulay</p>
+        <picture>
+          <source srcset="/images/headers/journal-accept-nothing.webp" type="image/webp">
+          <img class="image" src="/images/headers/journal-accept-nothing.jpg" alt="" width="2560" height="1440" fetchpriority="high" decoding="async">
+        </picture>
+      </section>
+
+      <div class="with-rail">
+        <div>
+          <section class="statement-section statement-section--article">
+            <div class="article">
+              <p>This website is the case study. It was built in a 48-hour window using Claude Code, then deployed globally through GitHub Pages and Cloudflare, and we didn't write a line of the code by hand. The stack is nothing but the fundamentals: HTML, CSS, JavaScript and JSON-LD for search and AI discovery. None of that tells you much about how it actually got made though.</p>
+              <p>There's a belief going round that AI replaces expertise with a single prompt: press a button, get a finished product. It doesn't work like that. With AI there's no such thing as a wrong question, but there are lazy ones, and knowing which one you're actually asking is harder than it sounds, because AI will answer either kind with <a href="/journal/i-dont-trust-ai-that-agrees-with-me/">the same confidence</a>.</p>
+
+              <h2>What was human and what wasn't</h2>
+              <p>Claude did the typing, in effect: execution speed, syntax, refactoring in the terminal. The bigger calls, architecture, performance constraints, what the site actually looks like, were ours to make, and the final say on all three sat with me. I created the visual identity, picked the typefaces, chose the colours, made all the graphics and directed every page of content, and Claude helped pull it together fast. This isn't a story about pressing a button and a website falling out the other end.</p>
+              <p>Along the way, the same process gave us something we hadn't planned for: a workflow for publishing new Journal articles. It flags which other channels a piece needs adapting for, where it fits best by topic, the basics on SEO and AI discovery and the length constraints that keep things scannable, all as markdown files that slot straight into the iA Writer setup we already write in.</p>
+
+              <h2>Beyond the default AI look</h2>
+              <p>The first pass was fast and looked like every other AI-generated site: functional, generic and bloated by the second or third round of changes. Prompt engineering only gets you so far. Design expertise has to take over from there, pushing past the AI's default assumptions instead of accepting its first answer.</p>
+              <p>We see effort being eroded a lot as AI does more for us, and that's a mistake. Left alone, AI will pull in heavy font packages, inject redundant inline styles and duplicate structure across pages. It'll look good right up until you actually dig into what's underneath it. Spotting those patterns and pushing back took human judgement, not a better prompt.</p>
+              <p>We iterated through three full design layouts before settling on one, working through type and spacing first rather than grids and columns. Over the hours, Claude was a near-perfect assistant. Plenty of things a human eye still catches faster than an agent. Plenty of things the agent did faster and better than a human.</p>
+
+              <h2>Refactoring through technical dialogue</h2>
+              <p>The clearest example came from a two-hour audit, where we treated Claude Code like a developer and asked it to review its own work instead of accepting the first pass as finished.</p>
+              <ul>
+                <li><strong>Styling:</strong> we audited the CSS for duplication and extraneous rules, and made Claude justify every external font against the new design system. Result: a 43% reduction in CSS overhead.</li>
+                <li><strong>HTML hygiene:</strong> we eliminated inline styles and pushed every script into a dedicated external file. Result: an 11% reduction in HTML file size and faster load times.</li>
+                <li><strong>JavaScript efficiency:</strong> before configuring caching, we had Claude analyse JS usage across the site and cut the duplication it found.</li>
+                <li><strong>Asset optimisation:</strong> raster logos became scalable SVGs, cutting network payload while keeping everything crisp. Swapping remaining JPGs for WebP is next, and it'll be the biggest saving yet.</li>
+              </ul>
+              <p>None of it would have happened without someone insisting the first output wasn't the finished thing.</p>
+              <p>A career with heavy digital exposure gave us the GitHub account this runs on, and GitHub Pages makes hosting a static site free, served over HTTPS. That got us most of the way, until search engines needed proper 301 redirects for anything permanently moved, which GitHub Pages can't do cleanly on its own. Cloudflare filled the gap, on a free account, with redirects plus a full toolbox of security, analytics and speed tools thrown in. It's a large enough piece of internet infrastructure, serving something in the region of 20% of all internet traffic, that upgrading later won't mean rebuilding anything.</p>
+              <p>Deployment to GitHub Pages and Cloudflare took minutes. Getting Cloudflare properly configured took an hour. What came out the other end was fast and lean.</p>
+              <p>Is it a perfect example of website engineering? No. Is it better than either of us could have produced alone? Yes.</p>
+
+              <h2>The big win</h2>
+              <p>Every prompt, audit rule and constraint we settled on during the build got written down into a rules file Claude reads at the start of every session, on this project and the next. It's the same idea as the article workflow mentioned earlier, just applied to the build: write the standard down once, and updates to the site or the Journal keep holding to it without us re-explaining it every time.</p>
+              <p>The real win isn't speed. It's that the standards live in the project now instead of in our heads, so they can't be forgotten or ignored.</p>
+
+              <h2>The expertise and speed handshake</h2>
+              <p>Judgement is what makes the speed useful. On its own, speed just gets you to the wrong answer faster. Claude handled syntax, refactored across files and audited logic in seconds. <a href="/about/">Twenty years of design experience</a> is what stopped us shipping whatever the AI would have settled for on its own.</p>
+              <p>The secret here is to accept nothing. Test and challenge everything. Just like you always have. You can just get it to a higher standard more quickly now. And there's nothing to not like about that.</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="rail">
+          <p class="rail-title">More from the journal</p>
+          <ul class="rail-list">
+            <li><a href="/journal/brand-is-doing-too-much-work/">"Brand" Is Doing Too Much Work<span class="rail-meta">Brand Strategy · September 2026</span></a></li>
+            <li><a href="/journal/good-is-everywhere-ideas-arent/">Good Is Everywhere Now. Ideas Aren't.<span class="rail-meta">AI Collaboration · August 2026</span></a></li>
+            <li><a href="/journal/i-dont-trust-ai-that-agrees-with-me/">I Don't Trust AI That Agrees With Me<span class="rail-meta">AI Collaboration · July 2026</span></a></li>
+          </ul>
+          <a href="/journal/" class="rail-cta">See all articles →</a>
+        </aside>
+      </div>
+
+      <section class="closing">
+        <p class="closing-line">AI will not turn someone into a senior developer or lead designer with the push of a button. But if you know which questions to ask, it turns you into an unstoppable one.</p>
+        <a href="/contact/" class="text-link">Work with us →</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="col">
+      <div class="footer-inner">
+        <a href="/" class="footer-logo" aria-label="Shed Industries home"><svg viewBox="0 0 2633 778" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g transform="matrix(1.02829,0,0,0.540123,0,0)"><g transform="matrix(2.9982,0,0,5.70801,-948.445,-1984.9)"><path d="M673.184,505.603L685.334,503.353C685.334,519.778 698.159,543.853 732.359,543.853C753.059,543.853 775.784,533.053 775.784,510.103C775.784,484.228 753.509,479.053 732.359,477.253C707.834,475.228 677.684,467.803 677.684,435.628C677.684,405.028 706.259,392.428 730.334,392.428C754.634,392.428 779.384,405.928 781.634,434.728L769.484,436.978C767.234,414.703 750.584,403.903 730.334,403.903C711.209,403.903 689.609,413.353 689.609,435.628C689.609,449.578 698.159,462.628 732.359,465.778C756.659,468.028 788.159,472.978 788.159,510.103C788.159,538.228 762.509,555.328 732.359,555.328C691.184,555.328 673.184,528.103 673.184,505.603ZM914.384,553.078L902.009,553.078L902.009,477.253L818.759,477.253L818.759,553.078L806.609,553.078L806.609,394.678L818.759,394.678L818.759,465.778L902.009,465.778L902.009,394.678L914.384,394.678L914.384,553.078ZM1035.43,553.078L935.084,553.078L935.084,394.678L1035.43,394.678L1035.43,406.153L947.234,406.153L947.234,465.778L1026.66,465.778L1026.66,477.253L947.234,477.253L947.234,541.603L1035.43,541.603L1035.43,553.078ZM1054.56,553.078L1054.56,394.678L1106.31,394.678C1148.16,394.903 1168.63,426.628 1168.63,473.878C1168.63,521.578 1148.16,553.078 1106.31,553.078L1054.56,553.078ZM1106.31,406.153L1066.71,406.153L1066.71,541.603L1106.31,541.603C1137.13,541.603 1155.36,517.528 1155.36,473.878C1155.36,431.128 1137.13,406.153 1106.31,406.153ZM611.614,600.016L316.338,600.016L316.338,459.785L380.977,347.739L548.232,347.739L611.614,459.812L611.614,600.016ZM599.9,467.21L452.38,467.21L452.38,588.303L599.9,588.303L599.9,467.21ZM332.335,455.496L436.383,455.496L384.359,365.317L332.335,455.496ZM440.667,588.303L440.667,467.21L328.052,467.21L328.052,588.303L440.667,588.303ZM394.499,359.453L449.906,455.496L595.717,455.496L541.4,359.453L394.499,359.453Z"/></g></g></svg></a>
+        <div class="footer-right">
+          <a href="/legal/" class="footer-legal-link">Privacy &amp; Terms</a>
+          <span class="footer-copy">&copy; 2026 Shed Industries</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div id="cookie-banner" class="cookie-banner">
+    <p>We use cookies to understand how visitors use this site. No tracking happens until you accept. <a href="/legal/#cookie-policy">Learn more</a></p>
+    <div class="cookie-banner-actions">
+      <button type="button" class="cookie-decline">Decline</button>
+      <button type="button" class="cookie-accept">Accept</button>
+    </div>
+  </div>
+
+  <script src="/site.js" defer></script>
+
+</body>
+</html>
