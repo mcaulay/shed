@@ -436,6 +436,8 @@ footer::before {
   border-top: 1px solid var(--ink);
 }
 
+.latest-journal + .services { margin-top: 45px; }
+
 .services-title {
   font-size: 18px;
   font-weight: 500;
