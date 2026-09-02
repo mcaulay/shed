@@ -36,13 +36,23 @@ styling on a single element is fine to leave inline.
 3. Add the URL to `sitemap.xml`.
 4. Add it to `llms.txt` under `## Journal`, newest first, with a one-sentence
    description matching the existing entries' style.
-5. **Update the "From the journal" list on the home page** (`index.html`,
-   `.latest-journal-list`, between the "What we'll do for you" link and
-   the closing ship image). It shows the 4 most recent articles, newest
-   first — add the new one at the top and drop the oldest of the 4. Each
-   item needs the thumbnail image (wrapped in `.latest-journal-thumb-wrap`
-   so all thumbs stay a fixed 108×108px regardless of title length), category
-   label, title, and "By [author]".
+5. **Update every place that lists "the latest articles" — there are three,
+   and they go stale silently if one is missed:**
+   - The home page (`index.html`, `.latest-journal-list`, between the "What
+     we'll do for you" link and the closing ship image).
+   - The 404 page (`404.html`, `.latest-journal-list`, above the brand
+     strategy teaser).
+   - `feed.xml` (add a new `<item>` at the top, in the same RSS 2.0 shape
+     as the existing entries).
+
+   All three show the 4 most recent articles, newest first — add the new
+   one at the top of each and drop the oldest of the 4 (from the two
+   `.latest-journal-list`s; `feed.xml` can keep every article, oldest
+   simply sorts last). Each `.latest-journal-list` item needs the thumbnail
+   image (wrapped in `.latest-journal-thumb-wrap` so all thumbs stay a
+   fixed 108×108px regardless of title length), category label, title, and
+   "By [author]". Each `feed.xml` item needs title, link, guid, pubDate
+   (RFC 822, e.g. `Tue, 01 Sep 2026 00:00:00 GMT`) and description.
 6. **Create a branded OG share image — don't skip this.** Every article needs
    its own 1200×630 share card, not just the raw header photo. Process:
    - Composite it from the article's own header image: dark scrim gradient,
@@ -85,4 +95,15 @@ matching the existing stubs. Better still, add a real 301 in Cloudflare
 (Rules → Redirect Rules) — GitHub Pages can't do this itself, which is why
 the stub exists as a fallback. Update every internal reference to the old
 URL: nav (if applicable), rail sidebars, the journal index, the home page's
-"From the journal" list, `sitemap.xml`, and `llms.txt`.
+"From the journal" list, `sitemap.xml`, and `llms.txt`. If it's a journal
+article, also remove its `<item>` from `feed.xml` and, if it was in the
+latest 4, drop it from both `.latest-journal-list`s (home page and 404
+page) and promote the next-oldest article into its place.
+
+## Keeping the brand strategy blurb in sync
+
+The 404 page's brand-strategy teaser (`404.html`, inside the `.closing`
+section near the bottom) quotes the same one-sentence definition used in
+the "What is brand strategy?" FAQ on `brand-strategy/index.html`. If that
+definition is ever reworded on the brand strategy page, copy the change
+across to `404.html` too — they're meant to say the same thing.
