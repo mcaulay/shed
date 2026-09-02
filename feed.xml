@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shed Industries Journal</title>
+    <link>https://shed.io/journal/</link>
+    <atom:link href="https://shed.io/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Honest thinking on brand positioning, market dynamics, and messaging. Published when it's worth reading.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Accept Nothing</title>
+      <link>https://shed.io/journal/accept-nothing/</link>
+      <guid isPermaLink="true">https://shed.io/journal/accept-nothing/</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description>A shed.io case study on building a website with AI: what the tool did, what stayed human, and why effort still decides the outcome.</description>
+    </item>
+
+    <item>
+      <title>"Brand" Is Doing Too Much Work</title>
+      <link>https://shed.io/journal/brand-is-doing-too-much-work/</link>
+      <guid isPermaLink="true">https://shed.io/journal/brand-is-doing-too-much-work/</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Why brand strategy keeps getting mistaken for design, marketing and creative direction, with examples of it working, failing and what five leading agencies do differently.</description>
+    </item>
+
+    <item>
+      <title>Good Is Everywhere Now. Ideas Aren't.</title>
+      <link>https://shed.io/journal/good-is-everywhere-ideas-arent/</link>
+      <guid isPermaLink="true">https://shed.io/journal/good-is-everywhere-ideas-arent/</guid>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
+      <description>AI has raised the baseline of good work for everyone, fast. But it can't have the idea in the first place — the businesses that stand out are the ones supplying that spark, not waiting for AI to supply it.</description>
+    </item>
+
+    <item>
+      <title>I Don't Trust AI That Agrees With Me</title>
+      <link>https://shed.io/journal/i-dont-trust-ai-that-agrees-with-me/</link>
+      <guid isPermaLink="true">https://shed.io/journal/i-dont-trust-ai-that-agrees-with-me/</guid>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Almost a year building a consultancy with Claude as a working partner. Why an AI that only agrees isn't saving you time — it's quietly making your judgement worse.</description>
+    </item>
+
+    <item>
+      <title>The Blast-Beat Guide to Brand Strategy</title>
+      <link>https://shed.io/journal/the-blast-beat-guide-to-brand-strategy/</link>
+      <guid isPermaLink="true">https://shed.io/journal/the-blast-beat-guide-to-brand-strategy/</guid>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+      <description>What Napalm Death and Dolly Parton have in common — and what it means for building a brand that lasts.</description>
+    </item>
+
+    <item>
+      <title>The Comfortable Danger Zone</title>
+      <link>https://shed.io/journal/the-comfortable-danger-zone/</link>
+      <guid isPermaLink="true">https://shed.io/journal/the-comfortable-danger-zone/</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>What settled success can hide. The stage at which a particular kind of vulnerability sets in — and how to see it before it becomes a problem.</description>
+    </item>
+
+    <item>
+      <title>What a Brand Roadmap Actually Is</title>
+      <link>https://shed.io/journal/what-a-brand-roadmap-actually-is/</link>
+      <guid isPermaLink="true">https://shed.io/journal/what-a-brand-roadmap-actually-is/</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Not a vision statement. Not a set of values to frame on a wall. A clear, prioritised plan for what needs to change, what needs to stay, and in what order.</description>
+    </item>
+
+  </channel>
+</rss>
