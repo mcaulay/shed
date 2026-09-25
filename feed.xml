@@ -6,7 +6,15 @@
     <atom:link href="https://shed.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>Honest thinking on brand positioning, market dynamics, and messaging. Published when it's worth reading.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Don't Write Off Your History</title>
+      <link>https://shed.io/journal/dont-write-off-your-history/</link>
+      <guid isPermaLink="true">https://shed.io/journal/dont-write-off-your-history/</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 GMT</pubDate>
+      <description>Brand history isn't baggage. The weird bits, the wins and the hard fails are exactly what competitors can't copy — and exactly what makes a brand worth remembering.</description>
+    </item>
 
     <item>
       <title>Accept Nothing</title>
