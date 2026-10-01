@@ -6,7 +6,15 @@
     <atom:link href="https://shed.io/feed.xml" rel="self" type="application/rss+xml" />
     <description>Honest thinking on brand positioning, market dynamics, and messaging. Published when it's worth reading.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>"I'll Know It When I See It"</title>
+      <link>https://shed.io/journal/ill-know-it-when-i-see-it/</link>
+      <guid isPermaLink="true">https://shed.io/journal/ill-know-it-when-i-see-it/</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 GMT</pubDate>
+      <description>The most dreaded phrase in a client discussion is often a sign the business already has a brand strategy. Here's how to hear it properly.</description>
+    </item>
 
     <item>
       <title>Don't Write Off Your History</title>
