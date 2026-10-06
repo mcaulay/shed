@@ -1,29 +1,38 @@
 User-agent: *
 Allow: /
+Disallow: /portfolio/
 
 # AI crawlers — explicitly welcome
 User-agent: GPTBot
 Allow: /
+Disallow: /portfolio/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /portfolio/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /portfolio/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /portfolio/
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /portfolio/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /portfolio/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /portfolio/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /portfolio/
 
 Sitemap: https://shed.io/sitemap.xml
